@@ -1,0 +1,10 @@
+name: 'Github Commit Timestamp Tagger'
+description: 'Tag the latest commit with a base version and a timestamp'
+author: 'Darryl L. Pierce'
+inputs:
+  base_version:              # change this
+    description: 'The base version.'
+    default: '0.0.1'
+runs:
+  using: 'node12'
+  main: 'lib/main.js'

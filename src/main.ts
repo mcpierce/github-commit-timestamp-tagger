@@ -24,6 +24,10 @@ async function run() {
       ref: `refs/tags/${tag}`,
       sha: sha
     });
+
+    // create the output variables
+    console.log(`Setting output variable: tag=${tag}`);
+    core.setOutput('tag_name', tag);
   } catch (error) {
     core.setFailed(error.message);
   }

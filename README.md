@@ -7,6 +7,13 @@ a timestamp.
 Nothing fancy. Just a way to tag commits to, for example, a development branch so
 a build can be produced for each merge.
 
+## Inputs
+
+ * **base_version** - The root text to use when creating the tag; i.e., **v0.5.0**
+
+## Outputs
+ * **tag_name** - The generated tag; i.e., **v0.5.0-20191204081223**
+
 ## Usage
 
 Add a workflow file like the following to your project:

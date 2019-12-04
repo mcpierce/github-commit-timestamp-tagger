@@ -28,6 +28,7 @@ async function run() {
     // create the output variables
     core.setOutput('tag_name', tag);
     core.setOutput('tag_hash', sha);
+    core.setOutput('tag_time', timestamp);
   } catch (error) {
     core.setFailed(error.message);
   }

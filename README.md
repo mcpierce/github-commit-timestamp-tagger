@@ -14,6 +14,7 @@ a build can be produced for each merge.
 ## Outputs
  * **tag_name** - The generated tag; i.e., **v0.5.0-20191204081223**
  * **tag_hash** - The commit hash for the tag.
+ * **tag_time** - The timstamp from the tag; i.e., **20191204081223**
 
 ## Usage
 

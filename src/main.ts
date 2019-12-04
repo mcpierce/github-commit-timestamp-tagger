@@ -26,8 +26,8 @@ async function run() {
     });
 
     // create the output variables
-    console.log(`Setting output variable: tag=${tag}`);
     core.setOutput('tag_name', tag);
+    core.setOutput('tag_hash', sha);
   } catch (error) {
     core.setFailed(error.message);
   }

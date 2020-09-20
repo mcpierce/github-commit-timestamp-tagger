@@ -34,8 +34,11 @@ jobs:
 
     steps:
     - name: Apply a tag to the new commit
+      id: create_tag
       uses: mcpierce/github-commit-timestamp-tagger@master
       with:
         repo-token: "${{ secrets.GITHUB_TOKEN }}"
         base_version: "v0.5.0"
+    - name: Use the tag in another step
+      run: echo ${{ steps.create_tag.outputs.tag_name }}
 ```
